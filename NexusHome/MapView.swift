@@ -30,6 +30,7 @@ struct MapView: UIViewRepresentable {
         
         // Hide map ornaments by moving them far off-screen
         mapView.ornaments.options.compass.margins = CGPoint(x: -1000, y: -1000)
+        mapView.ornaments.options.scaleBar.margins = CGPoint(x: -1000, y: -1000)
         mapView.ornaments.options.logo.margins = CGPoint(x: -1000, y: -1000)
         mapView.ornaments.options.attributionButton.margins = CGPoint(x: -1000, y: -1000)
         
