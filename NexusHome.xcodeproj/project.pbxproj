@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A929D8C2EA853A500BEF994 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 0A929D252EA8500000BEF994 /* MapboxMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0A929D082EA8481E00BEF994 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A929D8C2EA853A500BEF994 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = NexusHome;
 			packageProductDependencies = (
+				0A929D252EA8500000BEF994 /* MapboxMaps */,
 			);
 			productName = NexusHome;
 			productReference = 0A929CFA2EA8481A00BEF994 /* NexusHome.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 0A929CF12EA8481A00BEF994;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0A929D242EA8500000BEF994 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A929CFB2EA8481A00BEF994 /* Products */;
 			projectDirPath = "";
@@ -400,6 +409,7 @@
 				DEVELOPMENT_TEAM = VJ6T7FHHKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MBXAccessToken = "pk.eyJ1IjoiZG9vcmRhc2giLCJhIjoiVVVUQnFGbyJ9.AryeDjOlliYPolJOa-uhUQ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +438,7 @@
 				DEVELOPMENT_TEAM = VJ6T7FHHKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MBXAccessToken = "pk.eyJ1IjoiZG9vcmRhc2giLCJhIjoiVVVUQnFGbyJ9.AryeDjOlliYPolJOa-uhUQ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +569,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A929D242EA8500000BEF994 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A929D252EA8500000BEF994 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A929D242EA8500000BEF994 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A929CF22EA8481A00BEF994 /* Project object */;
 }

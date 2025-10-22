@@ -9,13 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        MapView(styleURL: "mapbox://styles/doordash/cm2u183cp000e01ola9h5cw28")
+            .ignoresSafeArea()
     }
 }
 
